@@ -1,0 +1,16 @@
+<div class="works">
+  <mat-card class="works-card">
+    <h1>{{ ResumeWords.WORK_EXPERIENCE }}</h1>
+    <div class="works-list">
+      <div *ngFor="let work of works" class="works-list-item">
+        <h4 class="works-list-item-name">{{ work.NAME }}</h4>
+        <h5 class="works-list-item-company">{{ work.COMPANY }}
+          ({{ work.STARTED_AT}} - {{ work.FINISHED_AT || ResumeWords.PRESENT}})</h5>
+        <p class="works-list-item-description" [innerHTML]="work.DESCRIPTION"></p>
+        <ul *ngIf="work.TECHNOLOGIES && work.TECHNOLOGIES.length">
+          <li *ngFor="let technology of work.TECHNOLOGIES">{{ technology }}</li>
+        </ul>
+      </div>
+    </div>
+  </mat-card>
+</div>

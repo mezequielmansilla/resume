@@ -1,0 +1,29 @@
+.contact {
+  display: block;
+  &-card {
+    height: 100%;
+    display: block;
+    float: left;
+    &-info {
+      width: 30%;
+    }
+    &-form {
+      width: 50%;
+    }
+    @media (max-width: 1100px) {
+      &-info, &-form  {
+        margin: 5px;
+        padding: 10px !important;
+        width: 95%;
+      }
+    }
+
+  }
+  &-input {
+    width: 100%;
+  }
+  &-button {
+    float: right;
+  }
+
+}

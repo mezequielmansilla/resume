@@ -1,0 +1,51 @@
+<div class="contact">
+  <mat-card class="contact-card contact-card-info">
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <mat-icon mat-list-icon>phone</mat-icon>
+        <h4 mat-line>{{ ResumeWords.PHONE }}</h4>
+        <p mat-line>+543513563330</p>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <mat-icon mat-list-icon>email</mat-icon>
+        <h4 mat-line>{{ ResumeWords.EMAIL_ADDRESS }}</h4>
+        <p mat-line>mezequielmansilla@gmail.com</p>
+      </mat-list-item>
+      <mat-list-item role="listitem">
+        <mat-icon mat-list-icon>where_to_vote</mat-icon>
+        <h4 mat-line>{{ ResumeWords.LOCATION }}</h4>
+        <p mat-line>Córdoba, Argentina.</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card>
+  <mat-card class="contact-card contact-card-form">
+    <h3>{{ ResumeWords.GET_IN_TOUCH }}</h3>
+    <form [formGroup]="contactForm" (ngSubmit)="sendMessage()">
+      <mat-form-field class="contact-input">
+        <input
+          matInput
+          [formControlName]="ContactFormNamesEnum.NAME"
+          [placeholder]="ResumeWords.YOUR_NAME"
+        />
+      </mat-form-field>
+      <mat-form-field class="contact-input">
+        <input
+          matInput
+          [formControlName]="ContactFormNamesEnum.SUBJECT"
+          [placeholder]="ResumeWords.SUBJECT"
+        />
+      </mat-form-field>
+      <mat-form-field class="contact-input">
+        <textarea
+          matInput
+          [formControlName]="ContactFormNamesEnum.MESSAGE"
+          [placeholder]="ResumeWords.MESSAGE"
+        >
+        </textarea>
+      </mat-form-field>
+      <button mat-button type="submit" class="contact-button" color="primary" aria-label="Submit Message">
+        {{ ResumeWords.SUBMIT_MESSAGE }}
+      </button>
+    </form>
+  </mat-card>
+</div>

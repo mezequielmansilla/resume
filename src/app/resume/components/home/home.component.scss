@@ -1,0 +1,13 @@
+@import '../../../../styles/variables';
+
+.resume-home {
+  &-links {
+    text-align: center;
+  }
+  &-card {
+    margin-top: $card-padding;
+  }
+  &-icon {
+    margin: 5px;
+  }
+}

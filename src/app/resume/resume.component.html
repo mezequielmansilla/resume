@@ -1,0 +1,40 @@
+
+<div class="resume">
+  <mat-toolbar color="primary" class="resume-toolbar">
+    <button mat-icon-button (click)="snav.toggle()" aria-label="Menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <div class="resume-title">
+      <h1>Ezequiel</h1>
+      <h3>System Engineer / Full Stack Engineer</h3>
+    </div>
+    <!-- This fills the remaining space of the current row -->
+    <span class="resume-toolbar-fill-remaining-space"></span>
+    <button mat-button [matMenuTriggerFor]="menu" aria-label="Languages">{{ currentLanguage$ | async | uppercase }}</button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="setLanguage(LanguagesEnum.EN)" aria-label="English">{{ LanguagesEnum.EN | uppercase }}</button>
+      <button mat-menu-item (click)="setLanguage(LanguagesEnum.ES)" aria-label="Spanish">{{ LanguagesEnum.ES | uppercase}}</button>
+    </mat-menu>
+
+  </mat-toolbar>
+
+  <mat-sidenav-container class="resume-sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 75 : 0">
+    <mat-sidenav #snav [opened]="!mobileQuery.matches" [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item (click)="itemClicked(snav)" [routerLink]="getLink(nav)" *ngFor="let nav of fillerNav">{{ getName(nav) | titlecase }}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="resume-sidenav-content">
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  <footer class="resume-footer">
+    <mat-toolbar color="primary" class="resume-footer-toolbar">
+      <span class="resume-footer-name">Ezequiel Mansilla - v1.2</span>
+      <span class="resume-toolbar-fill-remaining-space"></span>
+      <span class="resume-footer-right">Developed in Angular 9 using Angular Material, RXJS, Typescript, Scully</span>  
+    </mat-toolbar>
+  </footer>
+</div>
