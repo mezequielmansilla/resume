@@ -88,7 +88,7 @@ const ResumeWordsEs: IResumeWord = {
   ],
   // about
   PROFILE: 'Perfil',
-  PROFILE_CONTENT: `Ingeniero en sistemas innovador y comprometido. Más de 5 años de experiencia trabajando con
+  PROFILE_CONTENT: `Ingeniero en sistemas innovador y comprometido. Más de 6 años de experiencia trabajando con
   equipos multidisciplinarios y tecnologías construyendo soluciones empresariales para el sector privado.<br>
   Proveo de experiencia y servicios en todos los niveles de ejecución, asumiendo grandes responsabilidades para
   su despliegue.`,
@@ -198,7 +198,7 @@ const ResumeWordsEn: IResumeWord = {
   ],
   // about
   PROFILE: 'Profile',
-  PROFILE_CONTENT: `Accomplished innovative System Engineer with more than 5-years-experience working with
+  PROFILE_CONTENT: `Accomplished innovative System Engineer with more than 6-years-experience working with
   multidisciplinary teams and technologies building enterprise solutions for private sectors.<br>
   Provide expertise and services at all levels of execution, assuming high levels of responsibility
   for their delivery.`,
