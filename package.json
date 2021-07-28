@@ -6,6 +6,7 @@
     "start": "ng serve -o --port 4800",
     "build": "ng build --prod",
     "build-prerender": "ng build --prod && scully",
+    "deploy": "ng build --prod && npx scully",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
