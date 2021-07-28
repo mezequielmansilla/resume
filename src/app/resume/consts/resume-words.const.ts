@@ -26,19 +26,15 @@ const ResumeWordsEs: IResumeWord = {
   PRESENT: 'Presente',
   WORKS_LIST: [
     {
-      NAME: 'Software Engineer',
-      COMPANY: 'Darwoft',
-      DESCRIPTION: `Desarrollo de aplicaciones empresariales para XPO Logistics (principal competidor de Fedex). Mis responsabilidades son
-      desarrollo, revisión de código, unit testing, análisis de performance y despliegue.<br>
-      Trabajé onsite por 2 meses como el líder técnico del equipo offshore - Oregon (Estados Unidos).`,
+      NAME: 'Full Stack Engineer',
+      COMPANY: 'Rocket Insights (part of Dept)',
+      DESCRIPTION: ``,
       FINISHED_AT: '',
-      STARTED_AT: 'Feb. 2019',
+      STARTED_AT: 'Jul. 2021',
       TECHNOLOGIES: [
-        `Angular, Angular Material, responsiveness con Flexbox, RxJS en el front end. Karma y
-        Jasmine para unit testing.`,
-        'Teamcity para deployments.',
-        'Elasticsearch para logging.',
-        'Oracle como base de datos.'
+        `Front-End: Angular`,
+        'Back-End: C# .NET Core',
+        'Database: SQL Server.'
       ]
     },
     {
@@ -56,6 +52,23 @@ const ResumeWordsEs: IResumeWord = {
         'Back-End: C#, WebApi2, .Net, Entity Framework.',
         'Elasticsearch para logging.',
         'Base de datos: SQL Server.'
+      ]
+    },
+    {
+      NAME: 'Front-End Software Designer',
+      COMPANY: 'Overactive',
+      DESCRIPTION: `Desarrollo de aplicaciones empresariales para XPO Logistics (principal competidor de Fedex).<br>
+      Lider tecnico front-end (off-site) a cargo de son desarrollo, revisión de código, unit testing, análisis de performance y despliegue.
+      .<br>
+      Trabaje onsite por 2 months como lider tecnico - Oregon (United States).`,
+      FINISHED_AT: 'Jul. 2021',
+      STARTED_AT: 'Feb. 2019',
+      TECHNOLOGIES: [
+        `Angular, Angular Material, responsiveness with Flexbox, RxJS in the front end. Karma and
+        Jasmine for unit testing.`,
+        'Teamcity for deployments.',
+        'Elasticsearch and GCP for logging.',
+        'Oracle as database.'
       ]
     },
     {
@@ -111,7 +124,7 @@ const ResumeWordsEs: IResumeWord = {
 const ResumeWordsEn: IResumeWord = {
   // Nav
   HOME: 'Home',
-  WORKS: 'Works',
+  WORKS: 'Jobs',
   CONTACT: 'Contact',
   ABOUT: 'About',
   // Home
@@ -134,20 +147,15 @@ const ResumeWordsEn: IResumeWord = {
   PRESENT: 'Present',
   WORKS_LIST: [
     {
-      NAME: 'Software Engineer',
-      COMPANY: 'Darwoft',
-      DESCRIPTION: `Development of enterprise applications for XPO Logistics (Fedex main competitor). My
-      responsibilities are developing, coding review, unit testing, performance analysis and
-      deployments.<br>
-      Worked onsite for 2 months as offshore technical leader - Oregon (United States).`,
+      NAME: 'Full Stack Engineer',
+      COMPANY: 'Rocket Insights (part of Dept)',
+      DESCRIPTION: ``,
       FINISHED_AT: '',
-      STARTED_AT: 'Feb. 2019',
+      STARTED_AT: 'Jul. 2021',
       TECHNOLOGIES: [
-        `Angular, Angular Material, responsiveness with Flexbox, RxJS in the front end. Karma and
-        Jasmine for unit testing.`,
-        'Teamcity for deployments.',
-        'Elasticsearch for logging.',
-        'Oracle as database.'
+        `Front-End: Angular`,
+        'Back-End: C# .NET Core',
+        'Database: SQL Server.'
       ]
     },
     {
@@ -165,6 +173,23 @@ const ResumeWordsEn: IResumeWord = {
         'Back-End: C#, WebApi2, .Net, Entity Framework.',
         'Elasticsearch for logging.',
         'Database: SQL Server.'
+      ]
+    },
+    {
+      NAME: 'Front-End Software Designer',
+      COMPANY: 'Overactive',
+      DESCRIPTION: `Development of enterprise applications for XPO Logistics (main Fedex competitor).<br>
+      Offsite Frontend Tech Lead, in charge of developing, coding review, unit testing, performance analysis, deployments.
+      .<br>
+      Worked onsite for 2 months as offshore technical leader - Oregon (United States).`,
+      FINISHED_AT: 'Jul. 2021',
+      STARTED_AT: 'Feb. 2019',
+      TECHNOLOGIES: [
+        `Angular, Angular Material, responsiveness with Flexbox, RxJS in the front end. Karma and
+        Jasmine for unit testing.`,
+        'Teamcity for deployments.',
+        'Elasticsearch and GCP for logging.',
+        'Oracle as database.'
       ]
     },
     {
