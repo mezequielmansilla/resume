@@ -178,7 +178,7 @@ const ResumeWordsEn: IResumeWord = {
     {
       NAME: 'Front-End Software Designer',
       COMPANY: 'Overactive',
-      DESCRIPTION: `Development of enterprise applications for XPO Logistics (main Fedex competitor).<br>
+      DESCRIPTION: `Development of enterprise applications for XPO Logistics (Fedex main competitor).<br>
       Offsite Frontend Tech Lead, in charge of developing, coding review, unit testing, performance analysis, deployments.
       .<br>
       Worked onsite for 2 months as offshore technical leader - Oregon (United States).`,
